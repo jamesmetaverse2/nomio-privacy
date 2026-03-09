@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nomio — 이용약관 / Terms of Use / Nutzungsbedingungen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #6366F1; --primary-light: #818CF8; --accent: #06B6D4;
+      --bg: #0D0B1A; --surface: #161328; --border: rgba(99,102,241,0.15);
+      --text: #E8E6FF; --text-muted: rgba(232,230,255,0.55);
+      --gradient: linear-gradient(135deg, #6366F1, #8B5CF6, #06B6D4);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: 'Noto Sans KR','DM Sans',sans-serif; font-size: 15px; line-height: 1.8; min-height: 100vh; }
+    body::before { content:''; position:fixed; top:-200px; left:-200px; width:600px; height:600px; background:radial-gradient(circle,rgba(99,102,241,0.12) 0%,transparent 70%); pointer-events:none; z-index:0; }
+    header { position:relative; z-index:1; padding:48px 24px 32px; text-align:center; border-bottom:1px solid var(--border); }
+    .logo { display:inline-flex; align-items:center; gap:12px; margin-bottom:24px; text-decoration:none; }
+    .logo-icon { width:44px; height:44px; background:var(--gradient); border-radius:12px; display:flex; align-items:center; justify-content:center; font-size:24px; font-weight:800; color:white; font-family:'DM Sans',sans-serif; box-shadow:0 8px 24px rgba(99,102,241,0.35); }
+    .logo-name { font-family:'DM Sans',sans-serif; font-size:22px; font-weight:700; background:var(--gradient); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+    header h1 { font-size:clamp(22px,4vw,34px); font-weight:700; margin-bottom:8px; }
+    header p { color:var(--text-muted); font-size:13px; }
+    .lang-tabs { display:flex; justify-content:center; gap:8px; padding:20px 24px 0; position:relative; z-index:1; }
+    .lang-tab { padding:8px 20px; border-radius:20px; border:1px solid var(--border); background:transparent; color:var(--text-muted); font-size:13px; font-weight:500; cursor:pointer; transition:all 0.2s; font-family:'Noto Sans KR','DM Sans',sans-serif; }
+    .lang-tab:hover { border-color:var(--primary-light); color:var(--text); }
+    .lang-tab.active { background:var(--gradient); border-color:transparent; color:white; }
+    .container { position:relative; z-index:1; max-width:760px; margin:0 auto; padding:36px 24px 80px; }
+    .lang-content { display:none; }
+    .lang-content.active { display:block; }
+    section { margin-bottom:32px; }
+    .section-header { display:flex; align-items:center; gap:10px; margin-bottom:14px; }
+    .section-num { width:26px; height:26px; background:var(--gradient); border-radius:7px; display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:700; color:white; font-family:'DM Sans',sans-serif; flex-shrink:0; }
+    h2 { font-size:17px; font-weight:700; }
+    .card { background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:18px 22px; }
+    p { color:var(--text-muted); margin-bottom:10px; }
+    p:last-child { margin-bottom:0; }
+    ul { list-style:none; padding:0; }
+    ul li { color:var(--text-muted); padding:6px 0 6px 18px; position:relative; border-bottom:1px solid rgba(99,102,241,0.08); font-size:14px; }
+    ul li:last-child { border-bottom:none; }
+    ul li::before { content:''; position:absolute; left:0; top:15px; width:6px; height:6px; border-radius:50%; background:var(--primary-light); }
+    .highlight { color:var(--primary-light); font-weight:500; }
+    a { color:var(--primary-light); }
+    .contact-card { background:linear-gradient(135deg,rgba(99,102,241,0.12),rgba(6,182,212,0.08)); border:1px solid rgba(99,102,241,0.25); border-radius:14px; padding:22px; text-align:center; }
+    .contact-email { display:inline-block; background:var(--gradient); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; font-weight:600; font-size:15px; text-decoration:none; }
+    footer { position:relative; z-index:1; text-align:center; padding:20px; border-top:1px solid var(--border); color:var(--text-muted); font-size:13px; }
+    footer a { color:var(--primary-light); text-decoration:none; }
+  </style>
+</head>
+<body>
+
+<header>
+  <a class="logo" href="../">
+    <div class="logo-icon">N</div>
+    <span class="logo-name">Nomio</span>
+  </a>
+  <h1 id="page-title">이용약관</h1>
+  <p>최종 업데이트: 2026년 3월</p>
+</header>
+
+<div class="lang-tabs">
+  <button class="lang-tab active" onclick="switchLang('ko', this)">한국어</button>
+  <button class="lang-tab" onclick="switchLang('en', this)">English</button>
+  <button class="lang-tab" onclick="switchLang('de', this)">Deutsch</button>
+</div>
+
+<div class="container">
+
+  <!-- ═══ 한국어 ═══ -->
+  <div class="lang-content active" id="content-ko">
+    <section>
+      <div class="section-header"><div class="section-num">1</div><h2>서비스 이용</h2></div>
+      <div class="card">
+        <p>Nomio 앱("서비스")을 사용함으로써 본 약관에 동의하는 것으로 간주됩니다.</p>
+        <ul>
+          <li>본 앱은 개인 재무 관리 목적으로만 사용해야 합니다</li>
+          <li>앱을 불법적인 목적이나 타인에게 해를 끼치는 방식으로 사용할 수 없습니다</li>
+          <li>13세 미만은 보호자의 동의 없이 사용할 수 없습니다</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-header"><div class="section-num">2</div><h2>지적 재산권</h2></div>
+      <div class="card">
+        <p>Nomio 앱의 모든 콘텐츠, 디자인, 코드는 Nomio의 지적 재산입니다.</p>
+        <ul>
+          <li>앱을 역공학, 복제, 수정, 배포하는 것을 금지합니다</li>
+          <li>사용자가 입력한 데이터의 소유권은 사용자에게 있습니다</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-header"><div class="section-num">3</div><h2>면책 조항</h2></div>
+      <div class="card">
+        <p>Nomio는 <span class="highlight">개인 재무 참고용</span>으로 제공됩니다. 전문적인 금융 조언을 대체하지 않습니다.</p>
+        <ul>
+          <li>환율 정보는 참고용이며 실제 거래 환율과 다를 수 있습니다</li>
+          <li>앱 사용으로 인한 금융적 손실에 대해 Nomio는 책임지지 않습니다</li>
+          <li>서비스는 "있는 그대로" 제공되며 특정 목적에의 적합성을 보장하지 않습니다</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-header"><div class="section-num">4</div><h2>광고</h2></div>
+      <div class="card">
+        <p>본 앱은 Google AdMob을 통한 배너 광고를 포함합니다. 광고 수익은 앱 개발 및 유지 비용에 사용됩니다.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-header"><div class="section-num">5</div><h2>서비스 변경 및 종료</h2></div>
+      <div class="card">
+        <p>Nomio는 사전 통보 없이 서비스를 변경하거나 종료할 권리를 보유합니다. 서비스 종료 전 데이터 백업을 권장합니다.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-header"><div class="section-num">6</div><h2>약관 변경</h2></div>
+      <div class="card">
+        <p>본 약관은 변경될 수 있습니다. 중요한 변경이 있을 경우 앱 내 알림 또는 이 페이지를 통해 공지합니다.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-header"><div class="section-num">7</div><h2>문의</h2></div>
+      <div class="contact-card">
+        <p>이용약관 관련 문의:</p>
+        <a class="contact-email" href="mailto:support@nomio.app">support@nomio.app</a>
+      </div>
+    </section>
+  </div>
+
+  <!-- ═══ English ═══ -->
+  <div class="lang-content" id="content-en">
+    <section>
+      <div class="section-header"><div class="section-num">1</div><h2>Use of Service</h2></div>
+      <div class="card">
+        <p>By using the Nomio app ("Service"), you agree to these Terms of Use.</p>
+        <ul>
+          <li>The app is intended for personal financial management purposes only</li>
+          <li>You may not use the app for illegal purposes or in ways that harm others</li>
+          <li>Users under 13 require parental consent</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-header"><div class="section-num">2</div><h2>Intellectual Property</h2></div>
+      <div class="card">
+        <p>All content, design, and code in the Nomio app is the intellectual property of Nomio.</p>
+        <ul>
+          <li>Reverse engineering, copying, modifying, or distributing the app is prohibited</li>
+          <li>Data entered by users remains the property of the user</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-header"><div class="section-num">3</div><h2>Disclaimer</h2></div>
+      <div class="card">
+        <p>Nomio is provided as a <span class="highlight">personal finance reference tool</span> and does not constitute professional financial advice.</p>
+        <ul>
+          <li>Exchange rates are for reference only and may differ from actual transaction rates</li>
+          <li>Nomio is not responsible for any financial losses resulting from use of the app</li>
+          <li>The service is provided "as is" without warranty of fitness for a particular purpose</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-header"><div class="section-num">4</div><h2>Advertising</h2></div>
+      <div class="card">
+        <p>This app includes banner advertising via Google AdMob. Ad revenue supports app development and maintenance costs.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-header"><div class="section-num">5</div><h2>Service Changes</h2></div>
+      <div class="card">
+        <p>Nomio reserves the right to modify or discontinue the service without prior notice. We recommend backing up your data regularly.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-header"><div class="section-num">6</div><h2>Changes to Terms</h2></div>
+      <div class="card">
+        <p>These terms may be updated. Significant changes will be announced via in-app notification or this page.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-header"><div class="section-num">7</div><h2>Contact</h2></div>
+      <div class="contact-card">
+        <p>Questions about these Terms:</p>
+        <a class="contact-email" href="mailto:support@nomio.app">support@nomio.app</a>
+      </div>
+    </section>
+  </div>
+
+  <!-- ═══ Deutsch ═══ -->
+  <div class="lang-content" id="content-de">
+    <section>
+      <div class="section-header"><div class="section-num">1</div><h2>Nutzung des Dienstes</h2></div>
+      <div class="card">
+        <p>Durch die Nutzung der Nomio-App ("Dienst") stimmen Sie diesen Nutzungsbedingungen zu.</p>
+        <ul>
+          <li>Die App ist ausschließlich für die persönliche Finanzverwaltung bestimmt</li>
+          <li>Die App darf nicht für illegale Zwecke oder in einer Weise genutzt werden, die anderen schadet</li>
+          <li>Nutzer unter 13 Jahren benötigen die Zustimmung eines Erziehungsberechtigten</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-header"><div class="section-num">2</div><h2>Geistiges Eigentum</h2></div>
+      <div class="card">
+        <p>Alle Inhalte, Designs und Codes der Nomio-App sind geistiges Eigentum von Nomio.</p>
+        <ul>
+          <li>Reverse Engineering, Kopieren, Modifizieren oder Verteilen der App ist verboten</li>
+          <li>Vom Nutzer eingegebene Daten verbleiben im Eigentum des Nutzers</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-header"><div class="section-num">3</div><h2>Haftungsausschluss</h2></div>
+      <div class="card">
+        <p>Nomio wird als <span class="highlight">persönliches Finanzreferenz-Tool</span> bereitgestellt und stellt keine professionelle Finanzberatung dar.</p>
+        <ul>
+          <li>Wechselkurse dienen nur als Referenz und können von tatsächlichen Transaktionskursen abweichen</li>
+          <li>Nomio haftet nicht für finanzielle Verluste aus der App-Nutzung</li>
+          <li>Der Dienst wird "wie besehen" ohne Gewährleistung der Eignung für einen bestimmten Zweck bereitgestellt</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-header"><div class="section-num">4</div><h2>Werbung</h2></div>
+      <div class="card">
+        <p>Diese App enthält Bannerwerbung über Google AdMob. Werbeeinnahmen unterstützen die App-Entwicklung und -Wartung.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-header"><div class="section-num">5</div><h2>Änderungen des Dienstes</h2></div>
+      <div class="card">
+        <p>Nomio behält sich das Recht vor, den Dienst ohne vorherige Ankündigung zu ändern oder einzustellen. Wir empfehlen, Ihre Daten regelmäßig zu sichern.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-header"><div class="section-num">6</div><h2>Änderungen der Bedingungen</h2></div>
+      <div class="card">
+        <p>Diese Bedingungen können aktualisiert werden. Wesentliche Änderungen werden über In-App-Benachrichtigungen oder diese Seite mitgeteilt.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-header"><div class="section-num">7</div><h2>Kontakt</h2></div>
+      <div class="contact-card">
+        <p>Fragen zu diesen Bedingungen:</p>
+        <a class="contact-email" href="mailto:support@nomio.app">support@nomio.app</a>
+      </div>
+    </section>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 Nomio &nbsp;·&nbsp;
+  <a href="../">개인정보처리방침 / Privacy Policy / Datenschutz</a> &nbsp;·&nbsp;
+  <a href="mailto:support@nomio.app">support@nomio.app</a>
+</footer>
+
+<script>
+  const titles = { ko: '이용약관', en: 'Terms of Use', de: 'Nutzungsbedingungen' };
+  function switchLang(lang, btn) {
+    document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
+    document.querySelectorAll('.lang-tab').forEach(el => el.classList.remove('active'));
+    document.getElementById('content-' + lang).classList.add('active');
+    btn.classList.add('active');
+    document.getElementById('page-title').textContent = titles[lang];
+  }
+</script>
+</body>
+</html>
